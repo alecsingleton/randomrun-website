@@ -234,3 +234,4 @@ https://apps.apple.com/app/random-run/id[YOUR_APP_ID]
 
 You'll get this URL from App Store Connect after your app is approved.
 
+
