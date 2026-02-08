@@ -203,6 +203,10 @@ nav {
 }
 
 @media (max-width: 900px) {
+    .hero > nav {
+        order: -2;
+    }
+    
     .hero-visual {
         position: relative;
         right: auto;
@@ -212,6 +216,7 @@ nav {
         max-width: 350px;
         margin: 0 auto;
         padding: var(--space-lg);
+        order: -1;
     }
 }
 
@@ -734,6 +739,8 @@ footer {
     .download-btn {
         width: 100%;
         max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .step {
