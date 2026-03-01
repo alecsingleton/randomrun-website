@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BikeRight – Safe Random Bike Loops for Your City</title>
+    <meta name="description" content="Randomly generated bike loops that put safety first—optimized for bike lanes, paths, and low-traffic streets.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="app-icon.png">
+    <link rel="icon" type="image/png" href="app-icon.png">
+</head>
+<body class="bikeright-theme">
+    <header class="hero">
+        <nav>
+            <div class="nav-left">
+                <a href="index.html" class="back-link">← All Apps</a>
+                <div class="logo">
+                    <img src="bikeright-icon.png" alt="BikeRight" class="logo-icon">
+                    <span class="logo-text">BikeRight</span>
+                </div>
+            </div>
+            <a href="random-run.html" class="sibling-app-link">
+                <span class="sibling-label">Also by us</span>
+                <span class="sibling-name">Random Run →</span>
+            </a>
+        </nav>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Ride somewhere new.</span>
+                <span class="title-line title-accent">Get home safe.</span>
+            </h1>
+            <p class="hero-description">
+                Randomly generated bike loops that maximize bike lanes, paths, and quiet streets—so you can explore your city with confidence.
+            </p>
+            <a href="https://apps.apple.com/app/bikeright" class="download-btn" target="_blank" rel="noopener">
+                <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                <span>Download on the App Store</span>
+            </a>
+        </div>
+        
+        <div class="scroll-hint" aria-hidden="true">
+            <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+            </svg>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="route-animation">
+                <svg viewBox="0 0 400 300" class="route-svg">
+                    <defs>
+                        <linearGradient id="bikeRouteGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#FAF0C8"/>
+                            <stop offset="50%" style="stop-color:#F0D264"/>
+                            <stop offset="100%" style="stop-color:#DAB43C"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- A loop path that comes back to start, reflecting bike loop routes -->
+                    <path class="bike-loop-path route-path" d="M80,200 L120,140 L180,120 L260,140 L300,100 L340,130 L320,200 L240,220 L160,210 Z" fill="none" stroke="url(#bikeRouteGradient)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle class="rider-dot runner-dot" cx="80" cy="200" r="8" fill="#DAB43C"/>
+                    <circle class="start-marker" cx="80" cy="200" r="12" fill="none" stroke="#DAB43C" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section class="how-it-works">
+        <div class="section-header">
+            <span class="section-tag">Dead simple</span>
+            <h2>How it works</h2>
+        </div>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Pick your goal for the day</h3>
+                    <p>Want to ride 15 kilometers? Only have 45 minutes? Choose distance or duration and BikeRight does the rest.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>One tap, three bike friendly loops</h3>
+                    <p>Instantly get three loop routes—each one scored and optimized for bike lanes, multi-use paths, and streets where cars give you room to breathe.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Get home safe</h3>
+                    <p>Follow turn-by-turn navigation built for cyclists. Discover bike-friendly streets you never knew existed. Every loop starts and ends right where you are</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="duration-note">
+            <div class="note-icon">🚴</div>
+            <p><strong>Safety isn't an afterthought.</strong> BikeRight chooses the routes it shows you by the quality and quantity of cycling infrastructure—the safest path is always the default.</p>
+        </div>
+    </section>
+
+    <section class="how-it-works" style="padding-top: 0;">
+        <div class="section-header">
+            <span class="section-tag">Privacy first</span>
+            <h2>Your ride stays yours.</h2>
+        </div>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">🔒</div>
+                <div class="step-content">
+                    <h3>No account required</h3>
+                    <p>Open the app and go. No sign-up, no login, no profile. BikeRight works the moment you tap it.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">📍</div>
+                <div class="step-content">
+                    <h3>Location never leaves your phone</h3>
+                    <p>Route generation happens entirely on-device. Your GPS coordinates and ride data are never sent to our servers—ever.</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">🚫</div>
+                <div class="step-content">
+                    <h3>Zero tracking, zero ads</h3>
+                    <p>We don't collect usage data, behavioral analytics, or any identifying information. What you do with the app is your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs">
+        <div class="specs-content">
+            <h2>Technical details</h2>
+            <div class="spec-grid">
+                <div class="spec-item">
+                    <span class="spec-label">Platform</span>
+                    <span class="spec-value">iOS 17.6+</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Price</span>
+                    <span class="spec-value">Free</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Apple Watch</span>
+                    <span class="spec-value">Coming soon</span>
+                </div>
+            </div>
+            
+            <div class="android-note">
+                <p>🤖 <strong>Android cyclist who wants safer routes?</strong> iOS only for now—but your voice matters. Let us know you're out there.</p>
+                <a href="mailto:playintraffic.ca@gmail.com?subject=Android%20Request%20for%20BikeRight" class="android-link">Tell us you want Android →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Your safest ride<br>starts here.</h2>
+            <a href="https://apps.apple.com/app/bikeright" class="download-btn download-btn-large" target="_blank" rel="noopener">
+                <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                <span>Download Free on App Store</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="bikeright-icon.png" alt="BikeRight" class="logo-icon" style="width:28px;height:28px;border-radius:6px;">
+                <span>BikeRight</span>
+            </div>
+            <div class="footer-links">
+                <a href="bikeright-privacy.html">Privacy Policy</a>
+                <a href="random-run.html">Random Run</a>
+                <a href="mailto:playintraffic.ca@gmail.com">Contact</a>
+            </div>
+            <div class="footer-copy">
+                <p>© 2026 BikeRight. Ride more. Stress less.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const routePath = document.querySelector('.route-path');
+            const riderDot = document.querySelector('.rider-dot');
+            
+            if (routePath && riderDot) {
+                const pathLength = routePath.getTotalLength();
+                
+                routePath.style.strokeDasharray = pathLength;
+                routePath.style.strokeDashoffset = pathLength;
+                
+                setTimeout(() => {
+                    routePath.style.transition = 'stroke-dashoffset 2.2s ease-out';
+                    routePath.style.strokeDashoffset = '0';
+                    
+                    let progress = 0;
+                    const animateRider = () => {
+                        if (progress <= 1) {
+                            const point = routePath.getPointAtLength(progress * pathLength);
+                            riderDot.setAttribute('cx', point.x);
+                            riderDot.setAttribute('cy', point.y);
+                            progress += 0.004;
+                            requestAnimationFrame(animateRider);
+                        }
+                    };
+                    animateRider();
+                }, 500);
+            }
+            
+            const steps = document.querySelectorAll('.step');
+            steps.forEach((step, index) => {
+                step.style.animationDelay = `${0.8 + index * 0.15}s`;
+            });
+            
+            const scrollHint = document.querySelector('.scroll-hint');
+            const howItWorks = document.querySelector('.how-it-works');
+            
+            function checkScrollHint() {
+                if (!scrollHint || !howItWorks) return;
+                const rect = howItWorks.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    scrollHint.classList.add('hidden');
+                } else {
+                    scrollHint.classList.remove('hidden');
+                }
+            }
+            
+            checkScrollHint();
+            window.addEventListener('scroll', checkScrollHint);
+            window.addEventListener('resize', checkScrollHint);
+        });
+    </script>
+</body>
+</html>
